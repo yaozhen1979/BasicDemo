@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?demo_test website="http://www.google.com.tw"?>
+
+<GOVIDLcCancelAgreedListRequest xmlns="http://uxb2b.com/GOVID/LcCanceAgreedlList">
+    <ISSUING_BANK_ID>007</ISSUING_BANK_ID>
+    <ISSUING_BRANCH_ID>0937</ISSUING_BRANCH_ID>
+    <ISSUING_DATE_START>2011/12/08</ISSUING_DATE_START>
+    <ISSUING_DATE_END>2012/01/08</ISSUING_DATE_END>
+    <test isbn="1234567890">
+        <testChildOne>test_one</testChildOne>
+        <testChildTwo>test_two</testChildTwo>
+    </test>
+</GOVIDLcCancelAgreedListRequest>
