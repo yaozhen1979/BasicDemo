@@ -1,5 +1,6 @@
 package IoC.factory;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.util.Properties;
 
@@ -15,9 +16,9 @@ public class BusinessFactory {
 	
 	private BusinessFactory() throws Exception{
 		props = new Properties();
-		props.load(new FileInputStream("src/IoC/config.properties"));
+		props.load(new FileInputStream("config.properties"));
 		String businessClass = props.getProperty("business.class");
-		String writerClass = props.getProperty("writer.classs");
+		String writerClass = props.getProperty("writer.class");
 		business = (Business) Class.forName(businessClass).newInstance();
 		writer = (IDeviceWriter) Class.forName(writerClass).newInstance();
 		business.setWriter(writer);
