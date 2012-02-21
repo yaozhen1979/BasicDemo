@@ -14,7 +14,7 @@ public class DemoTwo {
 		// TODO Auto-generated method stub
 		Timer timer = new Timer();
 		timer.schedule(new DateTask(), 1000, 3000);
-		System.out.println("現在時間：：" + new Date());
+		System.out.println("現在時間：" + new Date());
 
 		try {
 			Thread.sleep(20000);
